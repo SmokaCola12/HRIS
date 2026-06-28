@@ -1,0 +1,252 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define styles -->
+  <defs>
+    <style>
+      .box { fill: #e8f4f8; stroke: #0284c7; stroke-width: 2; }
+      .admin-box { fill: #fef3c7; stroke: #d97706; stroke-width: 2; }
+      .user-box { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; }
+      .decision { fill: #f3e8ff; stroke: #a855f7; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 13px; }
+      .title { font-size: 18px; font-weight: bold; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .label { font-size: 11px; fill: #666; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="30" class="text title" text-anchor="middle">HRIS v.0 - Complete Application Flow</text>
+
+  <!-- LOGIN SECTION -->
+  <g>
+    <text x="50" y="60" class="text" style="font-weight: bold;">1. LOGIN & AUTHENTICATION</text>
+    
+    <!-- Login Box -->
+    <rect x="20" y="80" width="120" height="50" class="box" rx="5"/>
+    <text x="80" y="110" class="text" text-anchor="middle">User Login</text>
+    
+    <!-- Arrow -->
+    <path d="M 80 130 L 80 160" class="arrow"/>
+    
+    <!-- Check Credentials -->
+    <polygon points="80,160 110,200 80,240 50,200" class="decision"/>
+    <text x="80" y="205" class="text" text-anchor="middle" style="font-size:11px;">Valid?</text>
+    
+    <!-- Fail Path -->
+    <path d="M 50 200 L 20 200" class="arrow"/>
+    <rect x="20" y="180" width="80" height="40" class="box" rx="5"/>
+    <text x="60" y="205" class="text" text-anchor="middle" style="font-size:11px;">Show Error</text>
+    
+    <!-- Success Path -->
+    <path d="M 110 200 L 140 200" class="arrow"/>
+    <rect x="140" y="180" width="100" height="40" class="box" rx="5"/>
+    <text x="190" y="205" class="text" text-anchor="middle" style="font-size:12px;">Create Session</text>
+    
+    <!-- Arrow to Dashboard -->
+    <path d="M 190 220 L 190 260" class="arrow"/>
+    <rect x="130" y="260" width="120" height="50" class="box" rx="5"/>
+    <text x="190" y="290" class="text" text-anchor="middle">Go to Dashboard</text>
+  </g>
+
+  <!-- ADMIN FLOW (LEFT) -->
+  <g>
+    <text x="50" y="350" class="text" style="font-weight: bold;">2. ADMIN FLOW (Failsafe Account)</text>
+    
+    <!-- Data Import -->
+    <rect x="20" y="370" width="110" height="60" class="admin-box" rx="5"/>
+    <text x="75" y="395" class="text" text-anchor="middle" style="font-weight:bold;">System Setup</text>
+    <text x="75" y="415" class="text" text-anchor="middle" style="font-size:11px;">Data Import</text>
+    
+    <!-- Arrow -->
+    <path d="M 75 430 L 75 470" class="arrow"/>
+    
+    <!-- Sub-steps -->
+    <rect x="20" y="470" width="50" height="35" class="admin-box" rx="3"/>
+    <text x="45" y="493" class="text" text-anchor="middle" style="font-size:10px;">dept.dat</text>
+    
+    <rect x="75" y="470" width="50" height="35" class="admin-box" rx="3"/>
+    <text x="100" y="493" class="text" text-anchor="middle" style="font-size:10px;">user.dat</text>
+    
+    <rect x="130" y="470" width="50" height="35" class="admin-box" rx="3"/>
+    <text x="155" y="493" class="text" text-anchor="middle" style="font-size:10px;">attlog.dat</text>
+    
+    <!-- Arrow to Organization -->
+    <path d="M 75 505 L 75 545" class="arrow"/>
+    
+    <!-- Organization Setup -->
+    <rect x="20" y="545" width="110" height="60" class="admin-box" rx="5"/>
+    <text x="75" y="570" class="text" text-anchor="middle" style="font-weight:bold;">Organization</text>
+    <text x="75" y="590" class="text" text-anchor="middle" style="font-size:11px;">Depts, Positions, Areas</text>
+    
+    <!-- Arrow to Payroll -->
+    <path d="M 75 605 L 75 645" class="arrow"/>
+    
+    <!-- Payroll Management -->
+    <rect x="20" y="645" width="110" height="60" class="admin-box" rx="5"/>
+    <text x="75" y="670" class="text" text-anchor="middle" style="font-weight:bold;">Payroll</text>
+    <text x="75" y="690" class="text" text-anchor="middle" style="font-size:11px;">Periods & Slips</text>
+    
+    <!-- Arrow to Approvals -->
+    <path d="M 75 705 L 75 745" class="arrow"/>
+    
+    <!-- Approvals -->
+    <rect x="20" y="745" width="110" height="60" class="admin-box" rx="5"/>
+    <text x="75" y="770" class="text" text-anchor="middle" style="font-weight:bold;">Approvals</text>
+    <text x="75" y="790" class="text" text-anchor="middle" style="font-size:11px;">Requests Review</text>
+  </g>
+
+  <!-- EMPLOYEE FLOW (MIDDLE) -->
+  <g>
+    <text x="350" y="350" class="text" style="font-weight: bold;">3. EMPLOYEE FLOW (Regular Users)</text>
+    
+    <!-- Dashboard -->
+    <rect x="300" y="370" width="110" height="50" class="user-box" rx="5"/>
+    <text x="355" y="400" class="text" text-anchor="middle" style="font-weight:bold;">Dashboard</text>
+    
+    <!-- Branches -->
+    <!-- Profile -->
+    <path d="M 300 395 L 250 430" class="arrow"/>
+    <rect x="180" y="410" width="100" height="50" class="user-box" rx="5"/>
+    <text x="230" y="435" class="text" text-anchor="middle" style="font-weight:bold;">Profile</text>
+    <text x="230" y="455" class="text" text-anchor="middle" style="font-size:11px;">View & Edit</text>
+    
+    <!-- Requests -->
+    <path d="M 355 420 L 355 470" class="arrow"/>
+    <rect x="300" y="470" width="110" height="50" class="user-box" rx="5"/>
+    <text x="355" y="495" class="text" text-anchor="middle" style="font-weight:bold;">Requests</text>
+    <text x="355" y="515" class="text" text-anchor="middle" style="font-size:11px;">Leave, OT, Advance</text>
+    
+    <!-- Attendance -->
+    <path d="M 410 420 L 460 430" class="arrow"/>
+    <rect x="410" y="410" width="100" height="50" class="user-box" rx="5"/>
+    <text x="460" y="435" class="text" text-anchor="middle" style="font-weight:bold;">Attendance</text>
+    <text x="460" y="455" class="text" text-anchor="middle" style="font-size:11px;">Daily/Monthly</text>
+    
+    <!-- Request Details -->
+    <rect x="300" y="545" width="50" height="35" class="user-box" rx="3"/>
+    <text x="325" y="568" class="text" text-anchor="middle" style="font-size:10px;">Leave</text>
+    
+    <rect x="360" y="545" width="50" height="35" class="user-box" rx="3"/>
+    <text x="385" y="568" class="text" text-anchor="middle" style="font-size:10px;">OT</text>
+    
+    <rect x="420" y="545" width="50" height="35" class="user-box" rx="3"/>
+    <text x="445" y="568" class="text" text-anchor="middle" style="font-size:10px;">Advance</text>
+    
+    <!-- Arrow to Pending -->
+    <path d="M 355 580 L 355 620" class="arrow"/>
+    
+    <!-- Pending Status -->
+    <rect x="300" y="620" width="110" height="50" class="decision" rx="5"/>
+    <text x="355" y="640" class="text" text-anchor="middle" style="font-weight:bold;">Request</text>
+    <text x="355" y="660" class="text" text-anchor="middle" style="font-size:11px;">Status Check</text>
+    
+    <!-- Payroll Access -->
+    <path d="M 460 460 L 500 620" class="arrow"/>
+    <rect x="460" y="620" width="110" height="50" class="user-box" rx="5"/>
+    <text x="515" y="645" class="text" text-anchor="middle" style="font-weight:bold;">Payroll</text>
+    <text x="515" y="665" class="text" text-anchor="middle" style="font-size:11px;">View Payslips</text>
+  </g>
+
+  <!-- DATA FLOW (RIGHT) -->
+  <g>
+    <text x="800" y="350" class="text" style="font-weight: bold;">4. DATA & REPORTING</text>
+    
+    <!-- System Database -->
+    <rect x="750" y="370" width="120" height="60" class="box" rx="5"/>
+    <text x="810" y="395" class="text" text-anchor="middle" style="font-weight:bold;">System DB</text>
+    <text x="810" y="415" class="text" text-anchor="middle" style="font-size:11px;">Employees, Attendance</text>
+    
+    <!-- Reports -->
+    <path d="M 810 430 L 810 470" class="arrow"/>
+    <rect x="750" y="470" width="120" height="50" class="box" rx="5"/>
+    <text x="810" y="495" class="text" text-anchor="middle" style="font-weight:bold;">Reports</text>
+    <text x="810" y="515" class="text" text-anchor="middle" style="font-size:11px;">Analytics & Views</text>
+    
+    <!-- Report Types -->
+    <rect x="700" y="545" width="50" height="35" class="box" rx="3"/>
+    <text x="725" y="568" class="text" text-anchor="middle" style="font-size:10px;">Attendance</text>
+    
+    <rect x="760" y="545" width="50" height="35" class="box" rx="3"/>
+    <text x="785" y="568" class="text" text-anchor="middle" style="font-size:10px;">Payroll</text>
+    
+    <rect x="820" y="545" width="50" height="35" class="box" rx="3"/>
+    <text x="845" y="568" class="text" text-anchor="middle" style="font-size:10px;">Leaves</text>
+    
+    <rect x="880" y="545" width="50" height="35" class="box" rx="3"/>
+    <text x="905" y="568" class="text" text-anchor="middle" style="font-size:10px;">Summary</text>
+    
+    <!-- System Status -->
+    <path d="M 810 520 L 950 470" class="arrow"/>
+    <rect x="920" y="450" width="120" height="50" class="box" rx="5"/>
+    <text x="980" y="475" class="text" text-anchor="middle" style="font-weight:bold;">System Status</text>
+    <text x="980" y="495" class="text" text-anchor="middle" style="font-size:11px;">Monitor Data</text>
+    
+    <!-- Formulas & Rules -->
+    <path d="M 920 500 L 950 550" class="arrow"/>
+    <rect x="920" y="550" width="120" height="50" class="box" rx="5"/>
+    <text x="980" y="575" class="text" text-anchor="middle" style="font-weight:bold;">Config</text>
+    <text x="980" y="595" class="text" text-anchor="middle" style="font-size:11px;">Formulas & Rules</text>
+    
+    <!-- Downloads -->
+    <path d="M 810 580 L 810 620" class="arrow"/>
+    <rect x="750" y="620" width="120" height="50" class="box" rx="5"/>
+    <text x="810" y="645" class="text" text-anchor="middle" style="font-weight:bold;">Downloads</text>
+    <text x="810" y="665" class="text" text-anchor="middle" style="font-size:11px;">PDF/Payslips</text>
+  </g>
+
+  <!-- REQUEST APPROVAL FLOW (BOTTOM) -->
+  <g>
+    <text x="50" y="840" class="text" style="font-weight: bold;">5. REQUEST APPROVAL WORKFLOW</text>
+    
+    <!-- Employee Submit -->
+    <rect x="20" y="850" width="70" height="30" class="user-box" rx="3"/>
+    <text x="55" y="870" class="text" text-anchor="middle" style="font-size:11px;">Submit Request</text>
+    
+    <!-- Arrow -->
+    <path d="M 90 865 L 130 865" class="arrow"/>
+    
+    <!-- Pending -->
+    <rect x="130" y="850" width="70" height="30" class="decision" rx="3"/>
+    <text x="165" y="870" class="text" text-anchor="middle" style="font-size:11px;">Pending</text>
+    
+    <!-- Arrow -->
+    <path d="M 200 865 L 240 865" class="arrow"/>
+    
+    <!-- Manager Review -->
+    <rect x="240" y="850" width="80" height="30" class="admin-box" rx="3"/>
+    <text x="280" y="870" class="text" text-anchor="middle" style="font-size:11px;">Manager Review</text>
+    
+    <!-- Decision -->
+    <path d="M 320 865 L 360 865" class="arrow"/>
+    <polygon points="375,865 385,875 375,885 365,875" class="decision"/>
+    
+    <!-- Approve -->
+    <path d="M 375 855 L 375 820" class="arrow"/>
+    <rect x="350" y="785" width="50" height="30" class="user-box" rx="3"/>
+    <text x="375" y="805" class="text" text-anchor="middle" style="font-size:10px;">Approved</text>
+    
+    <!-- Reject -->
+    <path d="M 375 875 L 375 910" class="arrow"/>
+    <rect x="350" y="910" width="50" height="30" class="admin-box" rx="3"/>
+    <text x="375" y="930" class="text" text-anchor="middle" style="font-size:10px;">Rejected</text>
+  </g>
+
+  <!-- Legend -->
+  <g>
+    <text x="1100" y="370" class="text" style="font-weight: bold;">Legend:</text>
+    
+    <rect x="1100" y="385" width="20" height="20" class="user-box" rx="2"/>
+    <text x="1130" y="400" class="text" style="font-size:11px;">Employee Action</text>
+    
+    <rect x="1100" y="410" width="20" height="20" class="admin-box" rx="2"/>
+    <text x="1130" y="425" class="text" style="font-size:11px;">Admin Action</text>
+    
+    <rect x="1100" y="435" width="20" height="20" class="box" rx="2"/>
+    <text x="1130" y="450" class="text" style="font-size:11px;">System Process</text>
+    
+    <polygon points="1110,460 1120,465 1110,470 1100,465" class="decision"/>
+    <text x="1130" y="468" class="text" style="font-size:11px;">Decision Point</text>
+  </g>
+</svg>
