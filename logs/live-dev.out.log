@@ -1,0 +1,147 @@
+
+> hris-v0@0.1.0 dev
+> next dev --turbopack --port 3000
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.3:3000
+✓ Ready in 912ms
+
+ GET / 307 in 1234ms (next.js: 502ms, application-code: 732ms)
+ GET /login 200 in 206ms (next.js: 41ms, application-code: 165ms)
+[HRIS-DB] Connected to SQLite database: C:\Users\dsmok\Documents\hris\database\hris_dev.sqlite
+[HRIS-DB] Running database migrations...
+[HRIS-DB] Added missing column holidays.observance_type
+[HRIS-DB] Database migrations completed
+[HRIS-DB] Default formulas seeded
+[HRIS-DB] Failsafe account already exists
+[HRIS-DB] Database initialization complete
+[HRIS-Auth] Successful login for user: failsafe
+ POST /api/auth/login 200 in 369ms (next.js: 160ms, application-code: 210ms)
+ GET /api/employees 200 in 63ms (next.js: 53ms, application-code: 11ms)
+ GET /api/employees/13/overview 200 in 1649ms (next.js: 1632ms, application-code: 17ms)
+ POST /api/holidays 200 in 327ms (next.js: 316ms, application-code: 11ms)
+ PUT /api/holidays 200 in 13ms (next.js: 3ms, application-code: 9ms)
+ DELETE /api/holidays?id=1 200 in 14ms (next.js: 5ms, application-code: 9ms)
+ GET /api/employees 401 in 15ms (next.js: 3ms, application-code: 12ms)
+ GET /api/employees/14/overview 401 in 36ms (next.js: 12ms, application-code: 24ms)
+ GET /api/employees/13/overview 401 in 25ms (next.js: 4ms, application-code: 22ms)
+ GET /api/reports/attendance?start_date=2026-06-01&end_date=2026-06-30 401 in 135ms (next.js: 76ms, application-code: 59ms)
+ GET /api/employees 403 in 13ms (next.js: 3ms, application-code: 10ms)
+ GET /api/employees/14/overview 403 in 23ms (next.js: 13ms, application-code: 11ms)
+ GET /api/reports/attendance?start_date=2026-06-01&end_date=2026-06-30 403 in 9ms (next.js: 4ms, application-code: 5ms)
+[HRIS-DB] Connected to SQLite database: C:\Users\dsmok\Documents\hris\database\hris_dev.sqlite
+[HRIS-DB] Running database migrations...
+[HRIS-DB] Database migrations completed
+[HRIS-DB] Default formulas seeded
+[HRIS-DB] Failsafe account already exists
+[HRIS-DB] Database initialization complete
+ GET /api/employees 200 in 122ms (next.js: 85ms, application-code: 37ms)
+[HRIS-DB] Connected to SQLite database: C:\Users\dsmok\Documents\hris\database\hris_dev.sqlite
+[HRIS-DB] Running database migrations...
+[HRIS-DB] Database migrations completed
+[HRIS-DB] Default formulas seeded
+[HRIS-DB] Failsafe account already exists
+[HRIS-DB] Database initialization complete
+ GET /api/employees/1/overview 403 in 135ms (next.js: 94ms, application-code: 41ms)
+ GET /api/employees/14/overview 200 in 26ms (next.js: 16ms, application-code: 10ms)
+ GET /api/employees/14/overview 200 in 15ms (next.js: 4ms, application-code: 11ms)
+ GET /api/employees 403 in 8ms (next.js: 3ms, application-code: 4ms)
+ GET /api/employees/14/overview 403 in 10ms (next.js: 4ms, application-code: 6ms)
+[HRIS-DB] Connected to SQLite database: C:\Users\dsmok\Documents\hris\database\hris_dev.sqlite
+[HRIS-DB] Running database migrations...
+[HRIS-DB] Database migrations completed
+[HRIS-DB] Default formulas seeded
+[HRIS-DB] Failsafe account already exists
+[HRIS-DB] Database initialization complete
+ GET /api/reports/attendance?start_date=2026-06-01&end_date=2026-06-30 403 in 88ms (next.js: 53ms, application-code: 36ms)
+ GET /dashboard/employees/14 200 in 3.3s (next.js: 2.9s, application-code: 449ms)
+ GET /dashboard/holidays 200 in 241ms (next.js: 38ms, application-code: 203ms)
+[HRIS-DB] Connected to SQLite database: C:\Users\dsmok\Documents\hris\database\hris_dev.sqlite
+[HRIS-DB] Running database migrations...
+[HRIS-DB] Database migrations completed
+[HRIS-DB] Default formulas seeded
+[HRIS-DB] Failsafe account already exists
+[HRIS-DB] Database initialization complete
+ GET / 307 in 611ms (next.js: 9ms, application-code: 602ms)
+ GET / 307 in 2.0s (next.js: 555ms, application-code: 1475ms)
+ GET /dashboard 200 in 697ms (next.js: 134ms, application-code: 563ms)
+ GET /api/auth/me 200 in 204ms (next.js: 172ms, application-code: 32ms)
+ GET /dashboard/employees 200 in 150ms (next.js: 72ms, application-code: 79ms)
+ GET /api/employees 200 in 36ms (next.js: 23ms, application-code: 13ms)
+ GET /api/salary-grades 200 in 95ms (next.js: 84ms, application-code: 11ms)
+ GET /api/organization/departments 200 in 159ms (next.js: 151ms, application-code: 7ms)
+ GET /api/organization/positions 200 in 128ms (next.js: 123ms, application-code: 5ms)
+ GET /api/shifts 200 in 102ms (next.js: 97ms, application-code: 5ms)
+ GET /dashboard/employees/13 200 in 102ms (next.js: 16ms, application-code: 87ms)
+ GET /api/employees/13/overview 200 in 151ms (next.js: 89ms, application-code: 61ms)
+ GET /dashboard/employees 200 in 148ms (next.js: 20ms, application-code: 127ms)
+ GET /api/employees 200 in 61ms (next.js: 42ms, application-code: 19ms)
+ GET /api/salary-grades 200 in 18ms (next.js: 11ms, application-code: 6ms)
+ GET /api/organization/departments 200 in 26ms (next.js: 19ms, application-code: 7ms)
+ GET /api/organization/positions 200 in 34ms (next.js: 27ms, application-code: 6ms)
+ GET /api/shifts 200 in 44ms (next.js: 36ms, application-code: 7ms)
+ GET /dashboard/employees/13 200 in 68ms (next.js: 15ms, application-code: 53ms)
+ GET /api/employees/13/overview 200 in 71ms (next.js: 57ms, application-code: 14ms)
+ GET /dashboard/requests/overtime 200 in 82ms (next.js: 39ms, application-code: 42ms)
+ GET /api/requests/ot 200 in 146ms (next.js: 135ms, application-code: 11ms)
+ GET /dashboard/requests/leave 200 in 236ms (next.js: 90ms, application-code: 146ms)
+ GET /api/requests/leave 200 in 256ms (next.js: 245ms, application-code: 11ms)
+ GET /dashboard/requests/salary-advance 200 in 89ms (next.js: 37ms, application-code: 52ms)
+ GET /api/requests/salary-advance 200 in 114ms (next.js: 101ms, application-code: 13ms)
+ GET /dashboard/requests/salary-advance 200 in 79ms (next.js: 6ms, application-code: 73ms)
+ GET /api/requests/salary-advance 200 in 13ms (next.js: 5ms, application-code: 8ms)
+ GET /dashboard/organization 200 in 56ms (next.js: 29ms, application-code: 27ms)
+ GET /api/organization/areas 200 in 171ms (next.js: 159ms, application-code: 12ms)
+ GET /api/organization/positions 200 in 16ms (next.js: 7ms, application-code: 9ms)
+ GET /api/organization/departments 200 in 25ms (next.js: 17ms, application-code: 8ms)
+ GET /dashboard/attendance 200 in 140ms (next.js: 68ms, application-code: 72ms)
+ GET /api/attendance?start_date=2026-06-01&end_date=2026-06-30 200 in 258ms (next.js: 250ms, application-code: 8ms)
+ GET /dashboard/profile 200 in 86ms (next.js: 26ms, application-code: 59ms)
+ GET /dashboard/attendance 200 in 65ms (next.js: 5ms, application-code: 60ms)
+ GET /api/attendance?start_date=2026-06-01&end_date=2026-06-30 200 in 121ms (next.js: 83ms, application-code: 38ms)
+ GET /dashboard/schedule 200 in 87ms (next.js: 33ms, application-code: 54ms)
+ GET /dashboard/organization 200 in 37ms (next.js: 4ms, application-code: 34ms)
+ GET /api/organization/departments 200 in 56ms (next.js: 43ms, application-code: 13ms)
+ GET /api/organization/positions 200 in 140ms (next.js: 28ms, application-code: 112ms)
+ GET /api/organization/areas 200 in 167ms (next.js: 141ms, application-code: 26ms)
+ GET /dashboard 200 in 30ms (next.js: 4ms, application-code: 26ms)
+ GET /dashboard/attendance 200 in 111ms (next.js: 13ms, application-code: 98ms)
+ GET /api/attendance?start_date=2026-06-01&end_date=2026-06-30 200 in 98ms (next.js: 43ms, application-code: 55ms)
+ GET /dashboard/payslips 200 in 93ms (next.js: 32ms, application-code: 61ms)
+ GET /api/payslips?year=2026 200 in 204ms (next.js: 195ms, application-code: 9ms)
+ GET /dashboard/payslips 200 in 53ms (next.js: 21ms, application-code: 32ms)
+ GET /dashboard/requests/overtime 200 in 39ms (next.js: 4ms, application-code: 35ms)
+ GET /api/requests/ot 200 in 65ms (next.js: 48ms, application-code: 16ms)
+ GET /dashboard/employees 200 in 47ms (next.js: 4ms, application-code: 43ms)
+ GET /api/organization/departments 200 in 21ms (next.js: 15ms, application-code: 6ms)
+ GET /api/employees 200 in 46ms (next.js: 39ms, application-code: 7ms)
+ GET /api/organization/positions 200 in 47ms (next.js: 37ms, application-code: 10ms)
+ GET /api/shifts 200 in 52ms (next.js: 48ms, application-code: 4ms)
+ GET /api/salary-grades 200 in 64ms (next.js: 58ms, application-code: 6ms)
+ GET /dashboard/employees/5 200 in 115ms (next.js: 13ms, application-code: 101ms)
+ GET /api/employees/5/overview 200 in 50ms (next.js: 36ms, application-code: 14ms)
+ POST /api/auth/logout 200 in 78ms (next.js: 62ms, application-code: 16ms)
+ GET /login 200 in 166ms (next.js: 34ms, application-code: 132ms)
+ GET /login 200 in 75ms (next.js: 12ms, application-code: 63ms)
+ GET /login 200 in 30ms (next.js: 6ms, application-code: 24ms)
+[HRIS-Auth] Successful login for user: failsafe
+ POST /api/auth/login 200 in 195ms (next.js: 59ms, application-code: 136ms)
+ GET /dashboard 200 in 58ms (next.js: 8ms, application-code: 50ms)
+ GET /dashboard/holidays 200 in 60ms (next.js: 4ms, application-code: 56ms)
+ GET /api/holidays 200 in 231ms (next.js: 197ms, application-code: 34ms)
+ GET /dashboard/system-status 200 in 125ms (next.js: 69ms, application-code: 56ms)
+[HRIS] In-memory database initialized
+ GET /api/system/status 200 in 80ms (next.js: 74ms, application-code: 7ms)
+ GET /api/system/status 200 in 13ms (next.js: 6ms, application-code: 8ms)
+ GET /dashboard/shifts 200 in 108ms (next.js: 32ms, application-code: 76ms)
+ GET /api/shifts 200 in 56ms (next.js: 43ms, application-code: 13ms)
+ GET /api/shifts 200 in 12ms (next.js: 4ms, application-code: 8ms)
+ GET /api/shifts 200 in 131ms (next.js: 40ms, application-code: 91ms)
+ GET /api/auth/me 200 in 251ms (next.js: 80ms, application-code: 170ms)
+ GET /api/shifts 200 in 568ms (next.js: 499ms, application-code: 70ms)
+ GET /api/shifts 200 in 21ms (next.js: 7ms, application-code: 14ms)
+ GET /api/shifts 200 in 42ms (next.js: 33ms, application-code: 9ms)
+ GET /api/shifts 200 in 52ms (next.js: 37ms, application-code: 16ms)
+ GET /api/shifts 200 in 246ms (next.js: 110ms, application-code: 136ms)
+ GET /api/shifts 200 in 34ms (next.js: 5ms, application-code: 29ms)

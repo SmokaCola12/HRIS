@@ -1,0 +1,362 @@
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={8} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={8}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={8} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={8}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+(node:20532) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={8} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={8}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={9} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={9}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={9} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={9}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={9} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={9}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={9} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={9}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 
+[browser] [HRIS-ERROR] Component Error: ReferenceError: selectedPeriod is not defined
+    at PayrollPage (app/dashboard/payroll/page.tsx:264:32)
+    at DashboardLayout (app/dashboard/layout.tsx:34:9)
+  262 |               </div>
+  263 |               <div className="flex items-center gap-4">
+> 264 |                 <Select value={selectedPeriod} onValueChange={setSelectedPeriod}>
+      |                                ^
+  265 |                   <SelectTrigger className="w-[180px]">
+  266 |                     <SelectValue />
+  267 |                   </SelectTrigger> (components/error-boundary.tsx:30:13)
+[browser] [HRIS-ERROR] Component Stack: 
+    at PayrollPage (http://localhost:3000/_next/static/chunks/_0yf5iwu._.js?id=%255Bproject%255D%252Fapp%252Fdashboard%252Fpayroll%252Fpage.tsx+%255Bapp-client%255D+%2528ecmascript%2529:84:168)
+    at ClientPageRoot (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:7837:27)
+    at SegmentViewNode (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3538:28)
+    at InnerLayoutRouter (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3849:34)
+    at RedirectErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12560:9)
+    at RedirectBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12602:29)
+    at HTTPAccessFallbackBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13096:39)
+    at LoadingBoundary (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3970:32)
+    at ErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:1567:26)
+    at InnerScrollAndFocusHandlerOld (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3684:9)
+    at ScrollAndMaybeFocusHandler (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3832:39)
+    at RenderFromTemplateContext (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:4222:44)
+    at SegmentStateProvider (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3554:33)
+    at OuterLayoutRouter (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3996:30)
+    at InnerLayoutRouter (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3849:34)
+    at RedirectErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12560:9)
+    at RedirectBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12602:29)
+    at HTTPAccessFallbackBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13096:39)
+    at LoadingBoundary (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3970:32)
+    at ErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:1567:26)
+    at InnerScrollAndFocusHandlerOld (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3684:9)
+    at ScrollAndMaybeFocusHandler (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3832:39)
+    at RenderFromTemplateContext (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:4222:44)
+    at SegmentStateProvider (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3554:33)
+    at OuterLayoutRouter (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3996:30)
+    at ErrorBoundary (http://localhost:3000/_next/static/chunks/_0n.rz2b._.js:983:9)
+    at main (<anonymous>)
+    at div (<anonymous>)
+    at DashboardLayout (http://localhost:3000/_next/static/chunks/_0n.rz2b._.js:1219:28)
+    at ClientSegmentRoot (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:7900:30)
+    at SegmentViewNode (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3538:28)
+    at InnerLayoutRouter (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3849:34)
+    at RedirectErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12560:9)
+    at RedirectBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12602:29)
+    at HTTPAccessFallbackErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13021:9)
+    at HTTPAccessFallbackBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13096:39)
+    at LoadingBoundary (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3970:32)
+    at ErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:1567:26)
+    at InnerScrollAndFocusHandlerOld (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3684:9)
+    at ScrollAndMaybeFocusHandler (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3832:39)
+    at RenderFromTemplateContext (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:4222:44)
+    at SegmentStateProvider (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3554:33)
+    at OuterLayoutRouter (http://localhost:3000/_next/static/chunks/node_modules__pnpm_11ui2tv._.js:3996:30)
+    at AuthProvider (http://localhost:3000/_next/static/chunks/_0vcswab._.js:79:25)
+    at body (<anonymous>)
+    at html (<anonymous>)
+    at RootLayout [Server] (<anonymous>)
+    at SegmentViewNode (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3538:28)
+    at __next_root_layout_boundary__ (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:2261:64)
+    at RedirectErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12560:9)
+    at RedirectBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12602:29)
+    at HTTPAccessFallbackErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13021:9)
+    at HTTPAccessFallbackBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13096:39)
+    at DevRootHTTPAccessFallbackBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:13165:46)
+    at AppDevOverlayErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_0z41kha._.js:3658:9)
+    at HotReload (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:14128:22)
+    at Router (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:14286:23)
+    at ErrorBoundaryHandler (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:1495:9)
+    at ErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:1567:26)
+    at RootErrorBoundary (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:12847:30)
+    at AppRouter (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:14616:22)
+    at ServerRoot (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:15101:23)
+    at Root (http://localhost:3000/_next/static/chunks/0kic_next_dist_client_0shlhmm._.js:15119:17) 
+    at ErrorBoundary.componentDidCatch (components/error-boundary.tsx:31:13)
+  29 |   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+  30 |     console.error('[HRIS-ERROR] Component Error:', error);
+> 31 |     console.error('[HRIS-ERROR] Component Stack:', errorInfo.componentStack);
+     |             ^
+  32 |     this.setState({ errorInfo });
+  33 |   }
+  34 | (components/error-boundary.tsx:31:13)
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[browser] In HTML, <td> cannot be a child of <div>.
+This will cause a hydration error.
+
+  ...
+    <LoadingBoundary name="employees/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/dashboard..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="dashboard/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function EmployeesPage} serverProvidedParams={{...}}>
+                  <EmployeesPage params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <DashboardHeader>
+                      <div className="p-8 space-y-6">
+                        <Card>
+                          <div data-slot="card" className="bg-card te...">
+                            <CardHeader>
+                            <CardContent className="space-y-4">
+>                             <div data-slot="card-content" className="px-6 space-y-4">
+                                <div>
+                                <TableCell colSpan={9} className="text-cente...">
+>                                 <td
+>                                   data-slot="table-cell"
+>                                   className={"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[..."}
+>                                   colSpan={9}
+>                                 >
+                        ...
+              ...
+            ...
+ 
+[browser] <div> cannot contain a nested <td>.
+See this log for the ancestor stack trace. 

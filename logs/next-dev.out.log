@@ -1,0 +1,10 @@
+
+> hris-v0@0.1.0 dev
+> next dev --turbopack --port 3000
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.3:3000
+✓ Ready in 1178ms
+
+ GET /login 200 in 2.9s (next.js: 1152ms, application-code: 1727ms)
